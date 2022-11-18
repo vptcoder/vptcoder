@@ -2,29 +2,85 @@
 <template>
   <div class="hello">
     <div v-show="!isHidden">
-      <h1>ngộ</h1>
+      <h1>vptcoder</h1>
       <i
         >the weird, the strange, the
-        <router-link tag="li" to="/listing">whimsical</router-link> like a cup of
-        <router-link tag="li" to="/listing">cosmic latte</router-link>.</i
+        <a href="https://www.google.com/search?q=whimsical" target="_blank">whimsical</a>
+        like a cup of
+        <a href="https://www.google.com/search?q=cosmic+latte" target="_blank"
+          >cosmic latte</a
+        >.</i
       >
       <div class="container-grid">
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
+        <!-- Set 1 -->
+        <div class="grid-item-header"></div>
+        <div class="grid-item-header text-left text-header-1 colored-cosmic-latte">
+          Things I'm doing.
+        </div>
+        <div class="grid-item-header"></div>
 
         <div class="grid-item"></div>
-        <div class="grid-item"></div>
+        <div class="grid-item text-left">
+          <dl>
+            <dt><i>Now</i> ➡️ Serverless: AWS, Azure</dt>
+            <dd>- MongoDB</dd>
+            <dd>- APIs → AWS Lambda</dd>
+            <dd>- Vue</dd>
+          </dl>
+        </div>
         <div class="grid-item"></div>
 
-        <div class="grid-item text-left">Not a thing shall be told, for the fun is to be found, and new grounds to be trodden.</div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
+        <!-- Set 2 -->
+        <div class="grid-item-header text-left"></div>
+        <div class="grid-item-header text-left text-header-1 colored-cosmic-latte">
+          Things I used to do.
+        </div>
+        <div class="grid-item-header"></div>
 
         <div class="grid-item"></div>
-        <div class="grid-item text-center">odd ball</div>
+        <div class="grid-item text-left">
+          <dl>
+            <dt><i>2020 - 2021</i> ➡️ School: Big Data</dt>
+            <dd>- Machine Learnings & Data Mining → Naive Bayes, SVM, ANNs...</dd>
+            <dd>- BPMN</dd>
+            <dd>- DB Tuning</dd>
+            <dd>- MongoDB, Oracle SQL, Hadoop</dd>
+
+            <dt><i>2017 - 2019</i> ➡️ Migration: On-prem → Private Cloud</dt>
+            <dd>- HA/DR</dd>
+            <dd>- Windows</dd>
+            <dd>- SFTP</dd>
+            <dd>- Hardening</dd>
+
+            <dt><i>2016 - 2017</i> ➡️ Web Portals</dt>
+            <dd>- WebForm</dd>
+            <dd>- SharePoint</dd>
+            <dd>- WCF</dd>
+            <dd>- SQL</dd>
+
+            <dt><i>2015 - 2016</i> ➡️ Models: Regression, Projection.</dt>
+            <dd>- Excel</dd>
+            <dd>- WinForm</dd>
+
+            <dt>
+              <i>2014 - 2015</i> ➡️ IoT, collects mosquito data:
+              <a
+                href="https://imaginecup.microsoft.com/en-us/Team/6cdfbaee-c550-48d0-a555-16ae2948f1db"
+                >Mozter</a
+              >,
+              <a href="https://imaginecup.microsoft.com/en-us/winners/2015WorldFinalists"
+                >and people liked it</a
+              >
+            </dt>
+            <dd>- Python</dd>
+            <dd>- Raspberry Pi</dd>
+            <dd>- Azure Storage</dd>
+            <dd>- FFT</dd>
+          </dl>
+        </div>
         <div class="grid-item"></div>
 
+        <!-- Set 3 -->
         <div class="grid-item"></div>
         <div class="grid-item"></div>
         <div class="grid-item"></div>
@@ -49,6 +105,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.hello {
+}
+
+dd {
+  list-style-type: circle;
+}
 chevron {
   position: relative;
   display: block;
@@ -76,10 +138,10 @@ chevron {
 }
 .container-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 5fr 1fr;
   grid-auto-rows: auto;
   column-gap: 20px;
-  row-gap: 20px;
+  row-gap: 5px;
   padding: 10px;
 }
 
@@ -87,13 +149,26 @@ chevron {
   padding: 20px;
   min-height: 5em;
 }
+.grid-item-header {
+  padding: 20px;
+  min-height: 0em;
+  height: 1em;
+}
+
 .text-left {
   text-align: left;
 }
 .text-center {
   text-align: center;
 }
-
+.text-header-1 {
+  font-weight: bolder;
+  font-size: x-large;
+  font-family: "Rockwell";
+}
+.colored-cosmic-latte {
+  background-color: #fff8e7;
+}
 .viewpart {
   margin-top: 30px;
 }
