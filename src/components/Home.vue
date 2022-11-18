@@ -2,12 +2,12 @@
 <template>
   <div class="hello">
     <div v-show="!isHidden">
-      <h1>vptcoder</h1>
+      <h1><a href="https://www.linkedin.com/in/vptcoder/" target="_blank">vptcoder</a></h1>
       <div class="img-banner">
         <div class="overlay-img">
           <i
             >the weird, the strange, the
-            <a href="https://www.google.com/search?q=whimsical" target="_blank"
+            <a href="https://www.instagram.com/t.e.neutrino/" target="_blank"
               >whimsical</a
             >
             like a cup of
@@ -17,7 +17,7 @@
           >
           <br />
           <b>person</b>
-          <br />singapore <br />
+          <br />singapore<br />
         </div>
       </div>
       <div class="container-grid">
@@ -103,7 +103,7 @@
             <dd>- Python</dd>
             <dd>- Raspberry Pi</dd>
             <dd>- Azure Storage</dd>
-            <dd>- FFT</dd>
+            <dd>- Fast Fourier Transform</dd>
             <br />
             <dt><i>199? - 2014</i> ➡️ <b>Huh? It's a blur</b></dt>
             <dd>- Learning?</dd>
