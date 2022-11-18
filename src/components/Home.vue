@@ -198,7 +198,7 @@ chevron {
 .img-banner {
   min-height: 270px;
   max-height: 600px;
-  max-width: 60%;
+  max-width: 0.6;
   height: 35vw;
   text-align: center;
   margin: auto;
