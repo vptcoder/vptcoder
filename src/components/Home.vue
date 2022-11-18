@@ -198,7 +198,7 @@ chevron {
 .img-banner {
   min-height: 270px;
   max-height: 600px;
-  max-width: 0.6;
+  max-width: 60%;
   height: 35vw;
   text-align: center;
   margin: auto;
@@ -212,7 +212,7 @@ chevron {
 }
 .overlay-img {
   background-color: #fff;
-  opacity: 66%;
+  opacity: 0.65;
   margin: auto;
   padding: 10px;
   border-radius: 0.5em;
