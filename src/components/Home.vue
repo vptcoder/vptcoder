@@ -212,7 +212,7 @@ chevron {
 }
 .overlay-img {
   background-color: #fff;
-  opacity: 65%;
+  opacity: 66%;
   margin: auto;
   padding: 10px;
   border-radius: 0.5em;
