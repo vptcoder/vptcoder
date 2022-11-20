@@ -27,4 +27,12 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+nav a:hover,
+nav a.router-link-active,
+nav a.router-link-exact-active {
+  cursor: pointer;
+  background-color: #fff8e7;
+}
+
 </style>
