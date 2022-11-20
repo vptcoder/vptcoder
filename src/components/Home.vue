@@ -2,7 +2,9 @@
 <template>
   <div class="hello">
     <div v-show="!isHidden">
-      <h1><a href="https://www.linkedin.com/in/vptcoder/" target="_blank">vptcoder</a></h1>
+      <h1>
+        <a href="https://www.linkedin.com/in/vptcoder/" target="_blank">vptcoder</a>
+      </h1>
       <div class="img-banner">
         <div class="overlay-img">
           <i
@@ -164,23 +166,106 @@ chevron {
   top: -10px; /*adjust thickness*/
   border-top-color: #fff; /*Match background colour*/
 }
-.container-grid {
-  display: grid;
-  grid-template-columns: 2fr 6fr 2fr;
-  grid-auto-rows: auto;
-  column-gap: 20px;
-  row-gap: 0px;
-  padding: 10px;
+@media only screen and (max-width: 400px) {
+  .container-grid {
+    display: grid;
+    grid-template-columns: 0.5fr 9fr 0.5fr;
+    grid-auto-rows: auto;
+    column-gap: 5px;
+    row-gap: 0px;
+    padding: 2px;
+  }
+  .grid-item {
+    padding: 10px;
+    min-height: 5em;
+  }
+  .grid-item-header {
+    padding: 10px;
+    min-height: 0em;
+    height: 1em;
+  }
+
+  .img-banner {
+    min-height: 270px;
+    max-height: 600px;
+    max-width: 96%;
+    height: 35vw;
+    text-align: center;
+    margin: auto;
+    background-image: url("../assets/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: padding-box;
+
+    position: relative;
+  }
+  .overlay-img {
+    background-color: #fff;
+    opacity: 0.65;
+    min-width: 80%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 0.5em;
+    font-size: 1.4vh;
+
+    position: absolute;
+    bottom: 0.5%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
 }
 
-.grid-item {
-  padding: 20px;
-  min-height: 5em;
-}
-.grid-item-header {
-  padding: 20px;
-  min-height: 0em;
-  height: 1em;
+@media only screen and (min-width: 401px) {
+  .container-grid {
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-auto-rows: auto;
+    column-gap: 20px;
+    row-gap: 0px;
+    padding: 10px;
+  }
+
+  .grid-item {
+    padding: 20px;
+    min-height: 5em;
+  }
+  .grid-item-header {
+    padding: 20px;
+    min-height: 0em;
+    height: 1em;
+  }
+
+  .img-banner {
+    min-height: 270px;
+    max-height: 600px;
+    max-width: 60%;
+    height: 35vw;
+    text-align: center;
+    margin: auto;
+    background-image: url("../assets/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: padding-box;
+
+    position: relative;
+  }
+  .overlay-img {
+    background-color: #fff;
+    opacity: 0.65;
+    margin: auto;
+    padding: 10px;
+    border-radius: 0.5em;
+    font-size: 1.4vh;
+
+    position: absolute;
+    bottom: 0.5%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
 }
 
 .text-left {
@@ -195,35 +280,6 @@ chevron {
   font-family: "Rockwell";
 }
 
-.img-banner {
-  min-height: 270px;
-  max-height: 600px;
-  max-width: 60%;
-  height: 35vw;
-  text-align: center;
-  margin: auto;
-  background-image: url("../assets/banner.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-clip: padding-box;
-
-  position: relative;
-}
-.overlay-img {
-  background-color: #fff;
-  opacity: 0.65;
-  margin: auto;
-  padding: 10px;
-  border-radius: 0.5em;
-  font-size: 1.4vh;
-
-  position: absolute;
-  bottom: 0.5%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
 .colored-cosmic-latte {
   background-color: #fff8e7;
 }
