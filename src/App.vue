@@ -1,7 +1,9 @@
 <template>
   <nav>
-    <a @click="goBack"><i class="fa fa-chevron-left"></i> <u>Back</u></a> | <span />
-    <span /> | <router-link to="/">Home</router-link> |
+    <a @click="goBack"><i class="fa fa-chevron-left"></i> <i><u>Back</u></i></a> <span />
+    <span /> | <router-link to="/">Code</router-link>
+    <span /> | <router-link to="/shoot">Shoot</router-link>
+    <span /> | <router-link to="/think">Think</router-link>
     <router-view />
   </nav>
 </template>
