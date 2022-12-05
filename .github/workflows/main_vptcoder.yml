@@ -53,8 +53,8 @@ jobs:
         with:
           name: node-app
 
-      - name: Unzip artifact for deployment
-        run: unzip release.zip
+#       - name: Unzip artifact for deployment
+#         run: unzip release.zip
         
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
@@ -63,4 +63,4 @@ jobs:
           app-name: 'vptcoder'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_15CBC87BFB3346D69120FC225758023A }}
-          package: .
+          package: release.zip
