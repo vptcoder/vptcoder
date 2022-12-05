@@ -75,4 +75,4 @@ jobs:
           app-name: 'vptcoder'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_15CBC87BFB3346D69120FC225758023A }}
-          package: release.zip
+          package: .
