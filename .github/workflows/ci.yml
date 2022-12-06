@@ -43,8 +43,11 @@ jobs:
       - name: Run linter 👀
         run: npm run lint
 
+      - name: build
+        run: npm run build
+
       - name: Zip artifact for deployment
-        run: zip -r release.zip . -x '*.git* *.zip' 
+        run: zip -r release.zip . -x '*.git*' 
         
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
