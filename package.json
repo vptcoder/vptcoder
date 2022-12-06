@@ -17,7 +17,7 @@
     "clean": "rm -rf aws-package.zip && npm run build"
   },
   "engines": {
-    "node": ">=18.12.0 <19.0.0"
+    "node": ">=14.19.2 <14.21.1"
   },
   "dependencies": {
     "@nuxt/content": "^1.0.0",
