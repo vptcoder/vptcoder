@@ -4,18 +4,20 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
+    "setenv": "export NODE_ENV=production NPM_CONFIG_UNSAFE_PERM=true",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "start": "export NODE_ENV=production && export NPM_CONFIG_UNSAFE_PERM=true && nuxt start",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
     "lint:prettier": "prettier --check .",
     "lint": "npm run lint:js && npm run lint:prettier",
     "lintfix": "prettier --write --list-different . && npm run lint:js -- --fix",
     "prepare": "husky install",
-    "aws-package": "rm -rf aws-package.zip && npm run build && zip -r aws-package.zip * -x 'aws-package.zip'"
+    "aws-package": "rm -rf aws-package.zip && npm run build && zip -r aws-package.zip * -x 'aws-package.zip'",
+    "clean": "rm -rf aws-package.zip && npm run build"
   },
   "engines": {
-    "node": ">=16.18.0 <16.18.1"
+    "node": ">=14.19.0 <14.21.1"
   },
   "dependencies": {
     "@nuxt/content": "^1.0.0",
