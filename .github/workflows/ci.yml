@@ -12,6 +12,7 @@ on:
 
 jobs:
   ci:
+    # Build on GitHub agent, then send call deploy action to deploy to Azure.
     runs-on: ${{ matrix.os }}
     environment:
       name: 'Production'
