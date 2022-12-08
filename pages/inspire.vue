@@ -10,6 +10,7 @@
           </small>
         </footer>
       </blockquote>
+      <nuxt-content :document="a" />
     </v-col>
   </v-row>
 </template>

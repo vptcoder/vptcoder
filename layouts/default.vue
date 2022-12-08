@@ -77,6 +77,21 @@ export default {
           to: '/',
         },
         {
+          icon: 'mdi-keyboard-variant',
+          title: 'Code',
+          to: '/home',
+        },
+        {
+          icon: 'mdi-thought-bubble',
+          title: 'Think',
+          to: '/philosophy',
+        },
+        {
+          icon: 'mdi-camera',
+          title: 'Shoot',
+          to: '/photography',
+        },
+        {
           icon: 'mdi-chart-bubble',
           title: 'Inspire',
           to: '/inspire',
@@ -85,7 +100,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js',
+      title: 'vptcoder',
     }
   },
 }
