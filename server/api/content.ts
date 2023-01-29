@@ -5,3 +5,10 @@
 //         api: 'content'
 //     }
 // })
+
+export default ($axios:any) => (resource : any) => ({
+    index () {
+        return $axios.$get(`/${resource}`);
+    },
+    // create(payload) {},
+})

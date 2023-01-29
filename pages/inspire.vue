@@ -10,7 +10,8 @@
           </small>
         </footer>
       </blockquote>
-      <nuxt-content :document="a" />
+      <nuxt-content :document="page" />
+      <ContentDoc />
     </v-col>
   </v-row>
 </template>
@@ -18,5 +19,12 @@
 <script>
 export default {
   name: 'InspirePage',
+  async asyncData({ $content }) {
+    const page = await $content('test').fetch()
+
+    return {
+      page,
+    }
+  },
 }
 </script>

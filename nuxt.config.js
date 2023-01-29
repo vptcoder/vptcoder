@@ -25,6 +25,8 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
 
+  serverMiddleware: ['~/serverMiddleware/ok'],
+
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
@@ -65,9 +67,16 @@ export default {
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
+    treeShake: true,
     theme: {
+      options: {
+        customProperties: true,
+      },
       dark: false,
       themes: {
+        light: {
+          background: '#fbf5e2',
+        },
         dark: {
           primary: colors.blue.darken2,
           accent: colors.grey.darken3,
