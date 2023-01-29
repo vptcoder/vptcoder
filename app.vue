@@ -1,5 +1,11 @@
-<template>
+<script setup lang="ts">
+const route = useRoute();
+</script>
+
+<template #nav>
   <div>
-    <NuxtWelcome />
+    <NuxtLoadingIndicator />
+    <!-- <NuxtPage /> -->
+    <NuxtLayout> <NuxtPage /> </NuxtLayout>
   </div>
 </template>

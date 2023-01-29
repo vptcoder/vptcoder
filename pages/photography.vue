@@ -2,9 +2,9 @@
 <template>
   <div class="hello">
     <div v-show="!isHidden">
-      <h1 class="page-title" style="text-align: center">
-        <a href="https://www.linkedin.com/in/vptcoder/" target="_blank"
-          >vptcoder</a
+      <h1 class="page-title text-center">
+        <a href="https://www.instagram.com/t.e.neutrino/" target="_blank"
+          >t.e.neutrino</a
         >
       </h1>
       <div class="img-banner">
@@ -135,20 +135,20 @@
 
 <script>
 export default {
-  name: 'v1Home',
+  name: "v1Home",
   props: {
     msg: String,
   },
   data() {
     return {
       isHidden: false,
-      publicPath: process.env.BASE_URL,
-    }
+      // publicPath: process.env.BASE_URL,
+    };
   },
   images: {
-    banner: 'banner.jpg',
+    banner: "banner.jpg",
   },
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -166,7 +166,7 @@ chevron {
 .chevron::after {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   border: 25px solid transparent; /*adjust size*/
 }
 
@@ -207,7 +207,7 @@ chevron {
     height: 35vw;
     text-align: center;
     margin: auto;
-    background-image: url('../assets/banner.jpg');
+    background-image: url("../assets/banner.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -259,7 +259,7 @@ chevron {
     height: 35vw;
     text-align: center;
     margin: auto;
-    background-image: url('../assets/banner.jpg');
+    background-image: url("../assets/banner.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -292,7 +292,7 @@ chevron {
 .text-header-1 {
   font-weight: bolder;
   font-size: x-large;
-  font-family: 'Rockwell';
+  font-family: "Rockwell";
 }
 
 .colored-cosmic-latte {

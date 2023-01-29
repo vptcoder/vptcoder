@@ -1,3 +1,9 @@
+https://codesandbox.io/s/nuxt3-tailwindcss-twowfx?from-embed=&file=/nuxt.config.ts
+
+# USEFUL SHITS
+
+https://tailwindcss.nuxt.dev/getting-started/setup
+
 # Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.

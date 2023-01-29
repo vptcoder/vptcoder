@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  @variants hover, focus {
+    .text-cosmic-latte {
+      color: #fff8e7;
+    }
+  }
+}
