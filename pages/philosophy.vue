@@ -26,108 +26,14 @@
           <br />singapore<br />
         </div>
       </div>
-      <div class="container-grid">
-        <!-- Set 3 -->
-        <div class="grid-item-header"></div>
-        <div
-          class="grid-item-header text-left text-header-1 colored-cosmic-latte"
-        >
-          To do
-        </div>
-        <div class="grid-item-header"></div>
-
-        <div class="grid-item"></div>
-        <div class="grid-item text-left">
-          <dl>
-            <dt><i>2022 - ?</i> ➡️ <b>E-commerce Hosting</b>?</dt>
-            <dd>- ?</dd>
-            <dd>- ?</dd>
-            <dd>- ?</dd>
-            <dd>- ?</dd>
-          </dl>
-        </div>
-        <div class="grid-item"></div>
-
-        <!-- Set 1 -->
-        <div class="grid-item-header"></div>
-        <div
-          class="grid-item-header text-left text-header-1 colored-cosmic-latte"
-        >
-          Doing
-        </div>
-        <div class="grid-item-header"></div>
-
-        <div class="grid-item"></div>
-        <div class="grid-item text-left">
-          <dl>
-            <dt><i>Now</i> ➡️ <b>Serverless: AWS</b></dt>
-            <dd>- MongoDB</dd>
-            <dd>- APIs → AWS Lambda, Node.js</dd>
-            <dd>- Vue</dd>
-          </dl>
-        </div>
-        <div class="grid-item"></div>
-
-        <!-- Set 2 -->
-        <div class="grid-item-header text-left"></div>
-        <div
-          class="grid-item-header text-left text-header-1 colored-cosmic-latte"
-        >
-          Done
-        </div>
-        <div class="grid-item-header"></div>
-
-        <div class="grid-item"></div>
-        <div class="grid-item text-left">
-          <dl>
-            <dt><i>2020 - 2021</i> ➡️ <b>School: Big Data</b></dt>
-            <dd>
-              - Machine Learnings & Data Mining → Naive Bayes, SVM, ANNs...
-            </dd>
-            <dd>- BPMN</dd>
-            <dd>- DB Tuning</dd>
-            <dd>- MongoDB, Oracle SQL, Hadoop</dd>
-            <br />
-            <dt>
-              <i>2017 - 2019</i> ➡️ <b>Migration: On-prem → Private Cloud</b>
-            </dt>
-            <dd>- HA/DR</dd>
-            <dd>- Windows</dd>
-            <dd>- SFTP</dd>
-            <dd>- Hardening</dd>
-            <br />
-            <dt><i>2016 - 2017</i> ➡️ <b>Web Portals</b></dt>
-            <dd>- WebForm</dd>
-            <dd>- SharePoint</dd>
-            <dd>- WCF</dd>
-            <dd>- SQL</dd>
-            <br />
-            <dt><i>2015 - 2016</i> ➡️ <b>Models: Regression, Projection</b></dt>
-            <dd>- Excel, VBA</dd>
-            <dd>- WinForm</dd>
-            <br />
-            <dt>
-              <i>2014 - 2015</i> ➡️ <b>IoT, collects mosquito data</b> →
-              <a
-                href="https://imaginecup.microsoft.com/en-us/Team/6cdfbaee-c550-48d0-a555-16ae2948f1db"
-                >Mozter</a
-              >, and
-              <a
-                href="https://imaginecup.microsoft.com/en-us/winners/2015WorldFinalists"
-                >people liked it</a
-              >.
-            </dt>
-            <dd>- Python</dd>
-            <dd>- Raspberry Pi</dd>
-            <dd>- Azure Storage</dd>
-            <dd>- Fast Fourier Transform</dd>
-            <br />
-            <dt><i>199? - 2014</i> ➡️ <b>Huh? It's a blur</b></dt>
-            <dd>- Learning?</dd>
-            <dd>- Sleeping?</dd>
-          </dl>
-        </div>
-        <div class="grid-item"></div>
+      <div
+        class="container flex flex-wrap flex-col items-center justify-center mx-auto my-2"
+      >
+        <TCardH>
+          <template #remark> question </template>
+          <template #title> Whether this is a good thing? </template>
+          <template #default>Yes this is a good thing!</template>
+        </TCardH>
       </div>
     </div>
   </div>
