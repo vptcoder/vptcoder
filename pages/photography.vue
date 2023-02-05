@@ -1,8 +1,8 @@
 <!-- eslint-disable vue/no-deprecated-router-link-tag-prop -->
 <template>
   <div class="hello">
-    <div v-show="!isHidden">
-      <h1 class="page-title text-center">
+    <div>
+      <h1 class="page-title text-center font-title text-4xl">
         <a href="https://www.instagram.com/t.e.neutrino/" target="_blank"
           >t.e.neutrino</a
         >
@@ -311,11 +311,6 @@ ul {
 li {
   display: inline-block;
   margin: 0 10px;
-}
-a {
-  /* color: #42b983; */
-  /* padding-inline-start: 5px;
-  padding-inline-end: 5px; */
 }
 
 nav a:hover,

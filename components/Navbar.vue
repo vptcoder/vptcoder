@@ -3,10 +3,14 @@
     <div
       class="container flex flex-wrap items-center justify-center mx-auto border-b-2"
     >
-      <NuxtLink to="/"> <TButton>Home</TButton></NuxtLink>
+      <NuxtLink class="font-serif" to="/"> <TButton>Home</TButton></NuxtLink>
       <TBlank>|</TBlank>
-      <NuxtLink to="/philosophy"> <TButton>Thoughts</TButton></NuxtLink>
-      <NuxtLink to="/photography"> <TButton>Shoot</TButton></NuxtLink>
+      <NuxtLink class="font-serif" to="/philosophy">
+        <TButton>Thoughts</TButton></NuxtLink
+      >
+      <NuxtLink class="font-serif" to="/photography">
+        <TButton>Shoot</TButton></NuxtLink
+      >
     </div>
   </header>
 </template>

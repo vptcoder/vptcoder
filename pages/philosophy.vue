@@ -1,8 +1,8 @@
 <!-- eslint-disable vue/no-deprecated-router-link-tag-prop -->
 <template>
   <div class="hello">
-    <div v-show="!isHidden">
-      <h1 class="page-title text-center">
+    <div>
+      <h1 class="page-title text-center font-title text-4xl">
         <a href="https://www.linkedin.com/in/vptcoder/" target="_blank"
           >vptcoder</a
         >
@@ -29,6 +29,11 @@
       <div
         class="container flex flex-wrap flex-col items-center justify-center mx-auto my-2"
       >
+        <TCardH>
+          <template #remark> question </template>
+          <template #title> Whether this is a good thing? </template>
+          <template #default>Yes this is a good thing!</template>
+        </TCardH>
         <TCardH>
           <template #remark> question </template>
           <template #title> Whether this is a good thing? </template>

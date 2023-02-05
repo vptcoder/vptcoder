@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-sm w-full">
+  <div class="max-w-sm w-full my-3">
     <div
       class="border border-gray-400 bg-white rounded-lg p-4 flex flex-col justify-between leading-normal"
     >
@@ -7,7 +7,7 @@
         <p class="text-sm text-gray-600 flex items-center">
           <slot name="remark">Remark</slot>
         </p>
-        <div class="text-gray-900 font-bold text-xl mb-2">
+        <div class="text-gray-900 font-bold font-serif text-xl mb-2">
           <slot name="title">Title</slot>
         </div>
         <p class="text-gray-700 text-base">
