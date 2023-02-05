@@ -1,87 +1,325 @@
+<!-- eslint-disable vue/no-deprecated-router-link-tag-prop -->
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <v-card class="logo py-4 d-flex justify-center">
-        <NuxtLogo />
-        <VuetifyLogo />
-      </v-card>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template Version 1
-        </v-card-title>
-        <v-card-text>
-          <p>
-            Vuetify is a progressive Material Design component framework for
-            Vue.js. It was designed to empower developers to create amazing
-            applications.
-          </p>
-          <p>
-            For more information on Vuetify, check out the
-            <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
+  <div class="hello">
+    <div>
+      <h1 class="page-title text-center font-title text-4xl">
+        <a href="https://www.linkedin.com/in/vptcoder/" target="_blank"
+          >vptcoder</a
+        >
+      </h1>
+      <div class="img-banner">
+        <div class="overlay-img">
+          <i
+            >the weird, the strange, the
+            <a href="https://www.instagram.com/t.e.neutrino/" target="_blank"
+              >whimsical</a
             >
-              documentation </a
-            >.
-          </p>
-          <p>
-            If you have questions, please join the official
+            like a cup of
             <a
-              href="https://chat.vuetifyjs.com/"
+              href="https://www.google.com/search?q=cosmic+latte"
               target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord </a
-            >.
-          </p>
-          <p>
-            Find a bug? Report it on the github
-            <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board </a
-            >.
-          </p>
-          <p>
-            Thank you for developing with Vuetify and I look forward to bringing
-            more exciting features in the future.
-          </p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3" />
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
+              >cosmic latte</a
+            >.</i
           >
-            Nuxt Documentation
-          </a>
           <br />
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn color="primary" nuxt to="/inspire"> Continue </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-col>
-  </v-row>
+          <b>person</b>
+          <br />singapore<br />
+        </div>
+      </div>
+      <div class="container-grid">
+        <!-- Set 3 -->
+        <div class="grid-item-header"></div>
+        <div
+          class="grid-item-header text-left text-header-1 colored-cosmic-latte"
+        >
+          To do
+        </div>
+        <div class="grid-item-header"></div>
+
+        <div class="grid-item"></div>
+        <div class="grid-item text-left">
+          <dl>
+            <dt><i>2022 - ?</i> ➡️ <b>E-commerce Hosting</b>?</dt>
+            <dd>- ?</dd>
+            <dd>- ?</dd>
+            <dd>- ?</dd>
+            <dd>- ?</dd>
+          </dl>
+        </div>
+        <div class="grid-item"></div>
+
+        <!-- Set 1 -->
+        <div class="grid-item-header"></div>
+        <div
+          class="grid-item-header text-left text-header-1 colored-cosmic-latte"
+        >
+          Doing
+        </div>
+        <div class="grid-item-header"></div>
+
+        <div class="grid-item"></div>
+        <div class="grid-item text-left">
+          <dl>
+            <dt><i>Now</i> ➡️ <b>Serverless: AWS</b></dt>
+            <dd>- MongoDB</dd>
+            <dd>- APIs → AWS Lambda, Node.js</dd>
+            <dd>- Vue</dd>
+          </dl>
+        </div>
+        <div class="grid-item"></div>
+
+        <!-- Set 2 -->
+        <div class="grid-item-header text-left"></div>
+        <div
+          class="grid-item-header text-left text-header-1 colored-cosmic-latte"
+        >
+          Done
+        </div>
+        <div class="grid-item-header"></div>
+
+        <div class="grid-item"></div>
+        <div class="grid-item text-left">
+          <dl>
+            <dt><i>2020 - 2021</i> ➡️ <b>School: Big Data</b></dt>
+            <dd>
+              - Machine Learnings & Data Mining → Naive Bayes, SVM, ANNs...
+            </dd>
+            <dd>- BPMN</dd>
+            <dd>- DB Tuning</dd>
+            <dd>- MongoDB, Oracle SQL, Hadoop</dd>
+            <br />
+            <dt>
+              <i>2017 - 2019</i> ➡️ <b>Migration: On-prem → Private Cloud</b>
+            </dt>
+            <dd>- HA/DR</dd>
+            <dd>- Windows</dd>
+            <dd>- SFTP</dd>
+            <dd>- Hardening</dd>
+            <br />
+            <dt><i>2016 - 2017</i> ➡️ <b>Web Portals</b></dt>
+            <dd>- WebForm</dd>
+            <dd>- SharePoint</dd>
+            <dd>- WCF</dd>
+            <dd>- SQL</dd>
+            <br />
+            <dt><i>2015 - 2016</i> ➡️ <b>Models: Regression, Projection</b></dt>
+            <dd>- Excel, VBA</dd>
+            <dd>- WinForm</dd>
+            <br />
+            <dt>
+              <i>2014 - 2015</i> ➡️ <b>IoT, collects mosquito data</b> →
+              <a
+                href="https://imaginecup.microsoft.com/en-us/Team/6cdfbaee-c550-48d0-a555-16ae2948f1db"
+                >Mozter</a
+              >, and
+              <a
+                href="https://imaginecup.microsoft.com/en-us/winners/2015WorldFinalists"
+                >people liked it</a
+              >.
+            </dt>
+            <dd>- Python</dd>
+            <dd>- Raspberry Pi</dd>
+            <dd>- Azure Storage</dd>
+            <dd>- Fast Fourier Transform</dd>
+            <br />
+            <dt><i>199? - 2014</i> ➡️ <b>Huh? It's a blur</b></dt>
+            <dd>- Learning?</dd>
+            <dd>- Sleeping?</dd>
+          </dl>
+        </div>
+        <div class="grid-item"></div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
+definePageMeta({
+  layout: "default",
+});
 export default {
-  name: 'IndexPage',
-}
+  name: "v1Home",
+  props: {
+    msg: String,
+  },
+  data() {
+    return {
+      isHidden: false,
+      // publicPath: process.env.BASE_URL,
+    };
+  },
+  images: {
+    banner: "banner.jpg",
+  },
+};
 </script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+dd {
+  list-style-type: circle;
+}
+chevron {
+  position: relative;
+  display: block;
+  height: 50px; /*height should be double border*/
+}
+
+.chevron::before,
+.chevron::after {
+  position: absolute;
+  display: block;
+  content: "";
+  border: 25px solid transparent; /*adjust size*/
+}
+
+/* Replace all text `top` below with left/right/bottom to rotate the chevron */
+
+.chevron::before {
+  top: 0;
+  border-top-color: #b00; /*Chevron Color*/
+}
+
+.chevron::after {
+  top: -10px; /*adjust thickness*/
+  border-top-color: #fff; /*Match background colour*/
+}
+@media only screen and (max-width: 400px) {
+  .container-grid {
+    display: grid;
+    grid-template-columns: 0.5fr 9fr 0.5fr;
+    grid-auto-rows: auto;
+    column-gap: 5px;
+    row-gap: 0px;
+    padding: 2px;
+  }
+  .grid-item {
+    padding: 10px;
+    min-height: 5em;
+  }
+  .grid-item-header {
+    padding: 10px;
+    min-height: 0em;
+    height: 1em;
+  }
+
+  .img-banner {
+    min-height: 270px;
+    max-height: 600px;
+    max-width: 96%;
+    height: 35vw;
+    text-align: center;
+    margin: auto;
+    background-image: url("../assets/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: padding-box;
+
+    position: relative;
+  }
+  .overlay-img {
+    background-color: #fff;
+    opacity: 0.65;
+    min-width: 80%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 0.5em;
+    font-size: 1.4vh;
+
+    position: absolute;
+    bottom: 0.5%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+@media only screen and (min-width: 401px) {
+  .container-grid {
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-auto-rows: auto;
+    column-gap: 20px;
+    row-gap: 0px;
+    padding: 10px;
+  }
+
+  .grid-item {
+    padding: 20px;
+    min-height: 5em;
+  }
+  .grid-item-header {
+    padding: 20px;
+    min-height: 0em;
+    height: 1em;
+  }
+
+  .img-banner {
+    min-height: 270px;
+    max-height: 600px;
+    max-width: 60%;
+    height: 35vw;
+    text-align: center;
+    margin: auto;
+    background-image: url("../assets/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: padding-box;
+
+    position: relative;
+  }
+  .overlay-img {
+    background-color: #fff;
+    opacity: 0.65;
+    margin: auto;
+    padding: 10px;
+    border-radius: 0.5em;
+    font-size: 1.4vh;
+
+    position: absolute;
+    bottom: 0.5%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-header-1 {
+  font-weight: bolder;
+  font-size: x-large;
+  font-family: "Rockwell";
+}
+
+.colored-cosmic-latte {
+  background-color: #fff8e7;
+}
+.viewpart {
+  margin-top: 30px;
+}
+h3 {
+  margin: 40px 0 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a:hover,
+nav a.router-link-active,
+nav a.router-link-exact-active {
+  cursor: pointer;
+  background-color: #fff8e7;
+}
+</style>

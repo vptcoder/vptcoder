@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  @variants hover, focus {
+    .text-cosmic-latte {
+      color: #fff8e7;
+    }
+  }
+}
+
+/* Fonts scaling
+100 – Thin
+200 – Extra Light (Ultra Light)
+300 – Light
+400 – Normal
+500 – Medium
+600 – Semi Bold (Demi Bold)
+700 – Bold
+800 – Extra Bold (Ultra Bold)
+900 – Black (Heavy) 
+*/
+
+@font-face {
+  font-family: "Mariposa Sans";
+  src: url("~/assets/fonts/Mariposa Sans Std Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Archivo";
+  src: url("~/assets/fonts/archivo.regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Archivo";
+  src: url("~/assets/fonts/archivo.italic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Archivo";
+  src: url("~/assets/fonts/archivo.medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Archivo";
+  src: url("~/assets/fonts/archivo.medium-italic.ttf");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Archivo";
+  src: url("~/assets/fonts/archivo.semibold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Archivo";
+  src: url("~/assets/fonts/archivo.semibold-italic.ttf");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Archivo";
+  src: url("~/assets/fonts/archivo.bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Masthead";
+  src: url("~/assets/fonts/Chomsky.otf");
+}
