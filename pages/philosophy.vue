@@ -1,8 +1,17 @@
 <!-- eslint-disable vue/no-deprecated-router-link-tag-prop -->
+
+<script setup>
+// const { data } = await useFetch(() => `/api/hello`)
+const cardOneRemark = 'advice'
+const cardOneTitle = 'On Path'
+const cardOneDefault =
+  "Don't choose a path too hard to walk or you risk not walking far at all."
+</script>
+
 <template>
   <div class="hello">
     <div>
-      <h1 class="page-title text-center font-title text-4xl">
+      <h1 class="text-center font-title text-4xl">
         <a href="https://www.linkedin.com/in/vptcoder/" target="_blank"
           >vptcoder</a
         >
@@ -30,9 +39,9 @@
         class="container flex flex-wrap flex-col items-center justify-center mx-auto my-2"
       >
         <TCardH>
-          <template #remark> question </template>
-          <template #title> Whether this is a good thing? </template>
-          <template #default>Yes this is a good thing!</template>
+          <template #remark>{{ cardOneRemark }}</template>
+          <template #title>{{ cardOneTitle }}</template>
+          <template #default>{{ cardOneDefault }}</template>
         </TCardH>
         <TCardH>
           <template #remark> question </template>
@@ -44,72 +53,9 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'v1Home',
-  props: {
-    msg: String,
-  },
-  data() {
-    return {
-      isHidden: false,
-    }
-  },
-  images: {
-    banner: 'banner.jpg',
-  },
-}
-</script>
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-dd {
-  list-style-type: circle;
-}
-chevron {
-  position: relative;
-  display: block;
-  height: 50px; /*height should be double border*/
-}
-
-.chevron::before,
-.chevron::after {
-  position: absolute;
-  display: block;
-  content: '';
-  border: 25px solid transparent; /*adjust size*/
-}
-
-/* Replace all text `top` below with left/right/bottom to rotate the chevron */
-
-.chevron::before {
-  top: 0;
-  border-top-color: #b00; /*Chevron Color*/
-}
-
-.chevron::after {
-  top: -10px; /*adjust thickness*/
-  border-top-color: #fff; /*Match background colour*/
-}
 @media only screen and (max-width: 400px) {
-  .container-grid {
-    display: grid;
-    grid-template-columns: 0.5fr 9fr 0.5fr;
-    grid-auto-rows: auto;
-    column-gap: 5px;
-    row-gap: 0px;
-    padding: 2px;
-  }
-  .grid-item {
-    padding: 10px;
-    min-height: 5em;
-  }
-  .grid-item-header {
-    padding: 10px;
-    min-height: 0em;
-    height: 1em;
-  }
-
   .img-banner {
     min-height: 270px;
     max-height: 600px;
@@ -143,25 +89,6 @@ chevron {
 }
 
 @media only screen and (min-width: 401px) {
-  .container-grid {
-    display: grid;
-    grid-template-columns: 2fr 6fr 2fr;
-    grid-auto-rows: auto;
-    column-gap: 20px;
-    row-gap: 0px;
-    padding: 10px;
-  }
-
-  .grid-item {
-    padding: 20px;
-    min-height: 5em;
-  }
-  .grid-item-header {
-    padding: 20px;
-    min-height: 0em;
-    height: 1em;
-  }
-
   .img-banner {
     min-height: 270px;
     max-height: 600px;
@@ -191,47 +118,5 @@ chevron {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
-}
-
-.text-left {
-  text-align: left;
-}
-.text-center {
-  text-align: center;
-}
-.text-header-1 {
-  font-weight: bolder;
-  font-size: x-large;
-  font-family: 'Rockwell';
-}
-
-.colored-cosmic-latte {
-  background-color: #fff8e7;
-}
-.viewpart {
-  margin-top: 30px;
-}
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  /* color: #42b983; */
-  /* padding-inline-start: 5px;
-  padding-inline-end: 5px; */
-}
-
-nav a:hover,
-nav a.router-link-active,
-nav a.router-link-exact-active {
-  cursor: pointer;
-  background-color: #fff8e7;
 }
 </style>
