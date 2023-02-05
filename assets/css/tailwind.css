@@ -22,49 +22,49 @@
 */
 
 @font-face {
-  font-family: "Mariposa Sans";
-  src: url("~/assets/fonts/Mariposa Sans Std Medium.otf") format("opentype");
+  font-family: 'Mariposa Sans';
+  src: url('~/assets/fonts/Mariposa Sans Std Medium.otf') format('opentype');
 }
 
 @font-face {
-  font-family: "Archivo";
-  src: url("~/assets/fonts/archivo.regular.ttf");
+  font-family: 'Archivo';
+  src: url('~/assets/fonts/archivo.regular.ttf');
   font-weight: 400;
 }
 @font-face {
-  font-family: "Archivo";
-  src: url("~/assets/fonts/archivo.italic.ttf");
+  font-family: 'Archivo';
+  src: url('~/assets/fonts/archivo.italic.ttf');
   font-style: italic;
 }
 @font-face {
-  font-family: "Archivo";
-  src: url("~/assets/fonts/archivo.medium.ttf");
+  font-family: 'Archivo';
+  src: url('~/assets/fonts/archivo.medium.ttf');
   font-weight: 500;
 }
 @font-face {
-  font-family: "Archivo";
-  src: url("~/assets/fonts/archivo.medium-italic.ttf");
+  font-family: 'Archivo';
+  src: url('~/assets/fonts/archivo.medium-italic.ttf');
   font-weight: 500;
   font-style: italic;
 }
 @font-face {
-  font-family: "Archivo";
-  src: url("~/assets/fonts/archivo.semibold.ttf");
+  font-family: 'Archivo';
+  src: url('~/assets/fonts/archivo.semibold.ttf');
   font-weight: 600;
 }
 @font-face {
-  font-family: "Archivo";
-  src: url("~/assets/fonts/archivo.semibold-italic.ttf");
+  font-family: 'Archivo';
+  src: url('~/assets/fonts/archivo.semibold-italic.ttf');
   font-weight: 600;
   font-style: italic;
 }
 @font-face {
-  font-family: "Archivo";
-  src: url("~/assets/fonts/archivo.bold.ttf");
+  font-family: 'Archivo';
+  src: url('~/assets/fonts/archivo.bold.ttf');
   font-weight: 700;
 }
 
 @font-face {
-  font-family: "Masthead";
-  src: url("~/assets/fonts/Chomsky.otf");
+  font-family: 'Masthead';
+  src: url('~/assets/fonts/Chomsky.otf');
 }
