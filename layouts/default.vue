@@ -3,7 +3,7 @@ import { container } from 'webpack';
 <template>
   <div>
     <!-- Default Desktop layout -->
-    <Navbar></Navbar>
+    <NavBar></NavBar>
     <slot></slot>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import tailwindConfig from "#tailwind-config";
+// import tailwindConfig from "#tailwind-config";
 </script>
 
 <template>

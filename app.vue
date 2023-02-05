@@ -1,8 +1,8 @@
 <script setup lang="ts">
-const route = useRoute();
+// const route = useRoute();
 </script>
 
-<template #nav>
+<template>
   <div>
     <NuxtLoadingIndicator />
     <!-- <NuxtPage /> -->
