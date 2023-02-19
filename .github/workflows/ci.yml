@@ -6,7 +6,7 @@ on:
       - main
       - master
   pull_request:
-    types: [synchronize, reopened, closed]
+    types: [synchronize, closed]
     branches:
       - main
       - master
