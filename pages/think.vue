@@ -12,32 +12,20 @@ const cardOneDefault =
   <div class="hello">
     <div>
       <h1 class="text-center font-title text-4xl">
-        <a href="https://www.linkedin.com/in/vptcoder/" target="_blank"
-          >vptcoder</a
-        >
+        <a href="https://www.linkedin.com/in/vptcoder/" target="_blank">overthink</a>
       </h1>
       <div class="img-banner">
         <div class="overlay-img">
-          <i
-            >the weird, the strange, the
-            <a href="https://www.instagram.com/t.e.neutrino/" target="_blank"
-              >whimsical</a
-            >
+          <i>the weird, the strange, the
+            <a href="https://www.instagram.com/t.e.neutrino/" target="_blank">whimsical</a>
             like a cup of
-            <a
-              href="https://www.google.com/search?q=cosmic+latte"
-              target="_blank"
-              >cosmic latte</a
-            >.</i
-          >
+            <a href="https://www.google.com/search?q=cosmic+latte" target="_blank">cosmic latte</a>.</i>
           <br />
           <b>person</b>
           <br />singapore<br />
         </div>
       </div>
-      <div
-        class="container flex flex-wrap flex-col items-center justify-center mx-auto my-2"
-      >
+      <div class="container flex flex-wrap flex-col items-center justify-center mx-auto my-2">
         <TCardH>
           <template #remark>{{ cardOneRemark }}</template>
           <template #title>{{ cardOneTitle }}</template>
@@ -71,6 +59,7 @@ const cardOneDefault =
 
     position: relative;
   }
+
   .overlay-img {
     background-color: #fff;
     opacity: 0.65;
@@ -104,6 +93,7 @@ const cardOneDefault =
 
     position: relative;
   }
+
   .overlay-img {
     background-color: #fff;
     opacity: 0.65;

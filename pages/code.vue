@@ -1,37 +1,100 @@
 <!-- eslint-disable vue/no-deprecated-router-link-tag-prop -->
+<script setup>
+// const { data } = await useFetch(() => `/api/hello`)
+
+const cards = [
+  {
+    id: 0,
+    cardRemark: 'work',
+    cardTitle: '<i>2020 - 2021</i> ➡️ <b>School: Big Data</b>',
+    cardDefault:
+      '<dd>- Machine Learnings & Data Mining → Naive Bayes, SVM, ANNs...</dd>' +
+      '<dd>- BPMN</dd>' +
+      '<dd>- DB Tuning</dd>' +
+      '<dd>- MongoDB, Oracle SQL, Hadoop</dd>',
+  },
+  {
+    id: 1,
+    cardRemark: 'work',
+    cardTitle:
+      '<i>2017 - 2019</i> ➡️ <b>Migration: On-prem → Private Cloud</b>',
+    cardDefault:
+      '<dd>- HA/DR</dd>' +
+      '<dd>- Windows</dd>' +
+      '<dd>- SFTP</dd>' +
+      '<dd>- Hardening</dd>',
+  },
+  {
+    id: 2,
+    cardRemark: 'work',
+    cardTitle: '<i>2016 - 2017</i> ➡️ <b>Web Portals</b>',
+    cardDefault:
+      '<dd>- WebForm</dd>' +
+      '<dd>- SharePoint</dd>' +
+      '<dd>- WCF</dd>' +
+      '<dd>- SQL</dd>',
+  },
+  {
+    id: 3,
+    cardRemark: 'work',
+    cardTitle: '<i>2015 - 2016</i> ➡️ <b>Models: Regression, Projection</b>',
+    cardDefault: '<dd>- Excel, VBA</dd>' + '<dd>- WinForm</dd>',
+  },
+  {
+    id: 4,
+    cardRemark: 'work',
+    cardTitle:
+      '<i>2014 - 2015</i> ➡️ <b>IoT, collects mosquito data</b> → <i><a href="https://imaginecup.microsoft.com/en-us/Team/6cdfbaee-c550-48d0-a555-16ae2948f1db">Mozter</a></i>, and <i><a href="https://imaginecup.microsoft.com/en-us/winners/2015WorldFinalists#comp_17380">people liked it</a></i>.',
+    cardDefault:
+      '<dd>- Python</dd>' +
+      '<dd>- Raspberry Pi</dd>' +
+      '<dd>- Azure Storage</dd>' +
+      '<dd>- Fast Fourier Transform</dd>',
+  },
+  {
+    id: 5,
+    cardRemark: 'work',
+    cardTitle: "<i>199? - 2014</i> ➡️ <b>Huh? It's a blur</b>",
+    cardDefault: '<dd>- Learning?</dd>' + '<dd>- Sleeping?</dd>',
+  },
+]
+</script>
+
 <template>
   <div class="hello">
     <div>
       <h1 class="page-title text-center font-title text-4xl">
-        <a href="https://www.instagram.com/t.e.neutrino/" target="_blank"
-          >t.e.neutrino</a
-        >
+        <a href="https://www.linkedin.com/in/vptcoder/" target="_blank"><u>vptcoder</u></a>
       </h1>
       <div class="img-banner">
         <div class="overlay-img">
-          <i
-            >the weird, the strange, the
-            <a href="https://www.instagram.com/t.e.neutrino/" target="_blank"
-              >whimsical</a
-            >
+          <i>the weird, the strange, the
+            <a href="https://www.instagram.com/t.e.neutrino/" target="_blank">whimsical</a>
             like a cup of
-            <a
-              href="https://www.google.com/search?q=cosmic+latte"
-              target="_blank"
-              >cosmic latte</a
-            >.</i
-          >
+            <a href="https://www.google.com/search?q=cosmic+latte" target="_blank">cosmic latte</a>.</i>
           <br />
           <b>person</b>
           <br />singapore<br />
         </div>
       </div>
+      <div v-for="card in cards" :key="card.id"
+        class="container flex flex-wrap flex-col items-center justify-center mx-auto my-2">
+        <TCardH>
+          <template #remark>
+            <div v-html="card.cardRemark"></div>
+          </template>
+          <template #title>
+            <div v-html="card.cardTitle"></div>
+          </template>
+          <template #default>
+            <div v-html="card.cardDefault"></div>
+          </template>
+        </TCardH>
+      </div>
       <div class="container-grid">
         <!-- Set 3 -->
         <div class="grid-item-header"></div>
-        <div
-          class="grid-item-header text-left text-header-1 colored-cosmic-latte"
-        >
+        <div class="grid-item-header text-left text-header-1 colored-cosmic-latte">
           To do
         </div>
         <div class="grid-item-header"></div>
@@ -50,9 +113,7 @@
 
         <!-- Set 1 -->
         <div class="grid-item-header"></div>
-        <div
-          class="grid-item-header text-left text-header-1 colored-cosmic-latte"
-        >
+        <div class="grid-item-header text-left text-header-1 colored-cosmic-latte">
           Doing
         </div>
         <div class="grid-item-header"></div>
@@ -70,9 +131,7 @@
 
         <!-- Set 2 -->
         <div class="grid-item-header text-left"></div>
-        <div
-          class="grid-item-header text-left text-header-1 colored-cosmic-latte"
-        >
+        <div class="grid-item-header text-left text-header-1 colored-cosmic-latte">
           Done
         </div>
         <div class="grid-item-header"></div>
@@ -108,14 +167,8 @@
             <br />
             <dt>
               <i>2014 - 2015</i> ➡️ <b>IoT, collects mosquito data</b> →
-              <a
-                href="https://imaginecup.microsoft.com/en-us/Team/6cdfbaee-c550-48d0-a555-16ae2948f1db"
-                >Mozter</a
-              >, and
-              <a
-                href="https://imaginecup.microsoft.com/en-us/winners/2015WorldFinalists"
-                >people liked it</a
-              >.
+              <a href="https://imaginecup.microsoft.com/en-us/Team/6cdfbaee-c550-48d0-a555-16ae2948f1db">Mozter</a>, and
+              <a href="https://imaginecup.microsoft.com/en-us/winners/2015WorldFinalists">people liked it</a>.
             </dt>
             <dd>- Python</dd>
             <dd>- Raspberry Pi</dd>
@@ -134,6 +187,9 @@
 </template>
 
 <script>
+definePageMeta({
+  layout: 'default',
+})
 export default {
   name: 'v1Home',
   props: {
@@ -156,10 +212,12 @@ export default {
 dd {
   list-style-type: circle;
 }
+
 chevron {
   position: relative;
   display: block;
-  height: 50px; /*height should be double border*/
+  height: 50px;
+  /*height should be double border*/
 }
 
 .chevron::before,
@@ -167,20 +225,25 @@ chevron {
   position: absolute;
   display: block;
   content: '';
-  border: 25px solid transparent; /*adjust size*/
+  border: 25px solid transparent;
+  /*adjust size*/
 }
 
 /* Replace all text `top` below with left/right/bottom to rotate the chevron */
 
 .chevron::before {
   top: 0;
-  border-top-color: #b00; /*Chevron Color*/
+  border-top-color: #b00;
+  /*Chevron Color*/
 }
 
 .chevron::after {
-  top: -10px; /*adjust thickness*/
-  border-top-color: #fff; /*Match background colour*/
+  top: -10px;
+  /*adjust thickness*/
+  border-top-color: #fff;
+  /*Match background colour*/
 }
+
 @media only screen and (max-width: 400px) {
   .container-grid {
     display: grid;
@@ -190,10 +253,12 @@ chevron {
     row-gap: 0px;
     padding: 2px;
   }
+
   .grid-item {
     padding: 10px;
     min-height: 5em;
   }
+
   .grid-item-header {
     padding: 10px;
     min-height: 0em;
@@ -215,6 +280,7 @@ chevron {
 
     position: relative;
   }
+
   .overlay-img {
     background-color: #fff;
     opacity: 0.65;
@@ -246,6 +312,7 @@ chevron {
     padding: 20px;
     min-height: 5em;
   }
+
   .grid-item-header {
     padding: 20px;
     min-height: 0em;
@@ -267,6 +334,7 @@ chevron {
 
     position: relative;
   }
+
   .overlay-img {
     background-color: #fff;
     opacity: 0.65;
@@ -286,9 +354,11 @@ chevron {
 .text-left {
   text-align: left;
 }
+
 .text-center {
   text-align: center;
 }
+
 .text-header-1 {
   font-weight: bolder;
   font-size: x-large;
@@ -298,16 +368,20 @@ chevron {
 .colored-cosmic-latte {
   background-color: #fff8e7;
 }
+
 .viewpart {
   margin-top: 30px;
 }
+
 h3 {
   margin: 40px 0 0;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
 }
+
 li {
   display: inline-block;
   margin: 0 10px;
