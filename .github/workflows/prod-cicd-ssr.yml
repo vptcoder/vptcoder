@@ -1,0 +1,64 @@
+name: ci/cd
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  ci:
+    # Build on GitHub agent, then send call deploy action to deploy to Azure.
+    runs-on: ${{ matrix.os }}
+    environment:
+      name: 'Production'
+      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: ['14.19.2']
+
+    steps:
+      - name: Where am I? 🤔
+        run: |
+          hostname
+          pwd
+
+      - name: Checkout 🛎
+        uses: actions/checkout@master
+
+      - name: Setup node env 🏗
+        uses: actions/setup-node@v3.6.0
+        with:
+          node-version: ${{ matrix.node }}
+          check-latest: true
+
+      - name: Cache node_modules 📦
+        uses: actions/cache@v3.2.4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install dependencies 👨🏻‍💻
+        run: npm ci --prefer-offline --no-audit
+
+      - name: Run linter 👀
+        run: npm run lint
+
+      - name: Build 🔨 on build-server
+        run: npm run build
+
+      - name: Zip 🗜️ artifact into release.zip
+        run: zip -r release.zip . -x '*.git*' 
+
+      - name: Deploy 🪄 to Azure Web App
+        id: deploy-to-webapp
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: 'vptcoder'
+          slot-name: 'Production'
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_15CBC87BFB3346D69120FC225758023A }}
+          package: release.zip
