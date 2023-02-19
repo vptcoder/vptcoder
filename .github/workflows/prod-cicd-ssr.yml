@@ -1,4 +1,4 @@
-name: ci/cd
+name: Production CI/CD Azure WebApp
 
 on:
   push:
