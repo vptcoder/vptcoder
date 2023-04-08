@@ -1,9 +1,14 @@
+<script setup>
+import { useSlots } from 'vue'
+const slots = useSlots()
+</script>
+
 <template>
   <div class="max-w-md w-full my-3">
     <div
       class="border border-gray-400 bg-white rounded-lg p-4 flex flex-col justify-between leading-normal"
     >
-      <div class="mb-8">
+      <div class="mb-6">
         <p class="text-sm text-gray-600 flex items-center break-words">
           <slot name="remark">Remark</slot>
         </p>
@@ -14,6 +19,12 @@
         </div>
         <div class="text-gray-700 text-sm whitespace-pre-line">
           <slot>Body Content</slot>
+        </div>
+      </div>
+      <div v-if="slots.link" class="inline-flex">
+        <span>&#128073;</span>
+        <div class="mx-2 text-blue-600 underline">
+          <slot name="link">Link</slot>
         </div>
       </div>
     </div>

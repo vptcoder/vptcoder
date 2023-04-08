@@ -71,3 +71,13 @@
   font-family: 'Masthead';
   src: url('~/assets/fonts/Chomsky.otf');
 }
+
+.nuxt-content ul {
+  list-style: disc
+}
+.nuxt-content ol {
+  list-style: decimal;
+}
+.nuxt-content blockquote {
+  margin:1em;
+}
