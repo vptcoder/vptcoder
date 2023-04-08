@@ -1,30 +1,9 @@
 <!-- eslint-disable vue/no-deprecated-router-link-tag-prop -->
-<script setup>
-definePageMeta({
-  layout: 'default',
-})
-
-
-const cards = [
-  {
-    id: 0,
-    cardRemark: 'self',
-    cardTitle: "Don't have much to say",
-    cardDefault:
-      '<dd>Life is...</dd>' +
-      '<dd>as it is.</dd>' +
-      '<dd>Probably not the best</dd>' +
-      '<dd>but probably, for the best.</dd>',
-  },
-
-]
-</script>
-
 <template>
   <div class="hello">
     <div>
       <h1 class="page-title text-center font-title text-4xl">
-        <a target="_blank">van phuong thanh</a>
+        <a href="https://www.instagram.com/t.e.neutrino/" target="_blank"><u>t.e.neutrino</u></a>
       </h1>
       <div class="img-banner">
         <div class="overlay-img">
@@ -37,25 +16,117 @@ const cards = [
           <br />singapore<br />
         </div>
       </div>
-      <div v-for="card in cards" :key="card.id"
-        class="container flex flex-wrap flex-col items-center justify-center mx-auto my-2">
-        <TCardH>
-          <template #remark>
-            <div v-html="card.cardRemark"></div>
-          </template>
-          <template #title>
-            <div v-html="card.cardTitle"></div>
-          </template>
-          <template #default>
-            <div v-html="card.cardDefault"></div>
-          </template>
-        </TCardH>
+      <div class="container-grid">
+        <!-- Set 3 -->
+        <div class="grid-item-header"></div>
+        <div class="grid-item-header text-left text-header-1 colored-cosmic-latte">
+          To do
+        </div>
+        <div class="grid-item-header"></div>
+
+        <div class="grid-item"></div>
+        <div class="grid-item text-left">
+          <dl>
+            <dt><i>2022 - ?</i> ➡️ <b>E-commerce Hosting</b>?</dt>
+            <dd>- ?</dd>
+            <dd>- ?</dd>
+            <dd>- ?</dd>
+            <dd>- ?</dd>
+          </dl>
+        </div>
+        <div class="grid-item"></div>
+
+        <!-- Set 1 -->
+        <div class="grid-item-header"></div>
+        <div class="grid-item-header text-left text-header-1 colored-cosmic-latte">
+          Doing
+        </div>
+        <div class="grid-item-header"></div>
+
+        <div class="grid-item"></div>
+        <div class="grid-item text-left">
+          <dl>
+            <dt><i>Now</i> ➡️ <b>Serverless: AWS</b></dt>
+            <dd>- MongoDB</dd>
+            <dd>- APIs → AWS Lambda, Node.js</dd>
+            <dd>- Vue</dd>
+          </dl>
+        </div>
+        <div class="grid-item"></div>
+
+        <!-- Set 2 -->
+        <div class="grid-item-header text-left"></div>
+        <div class="grid-item-header text-left text-header-1 colored-cosmic-latte">
+          Done
+        </div>
+        <div class="grid-item-header"></div>
+
+        <div class="grid-item"></div>
+        <div class="grid-item text-left">
+          <dl>
+            <dt><i>2020 - 2021</i> ➡️ <b>School: Big Data</b></dt>
+            <dd>
+              - Machine Learnings & Data Mining → Naive Bayes, SVM, ANNs...
+            </dd>
+            <dd>- BPMN</dd>
+            <dd>- DB Tuning</dd>
+            <dd>- MongoDB, Oracle SQL, Hadoop</dd>
+            <br />
+            <dt>
+              <i>2017 - 2019</i> ➡️ <b>Migration: On-prem → Private Cloud</b>
+            </dt>
+            <dd>- HA/DR</dd>
+            <dd>- Windows</dd>
+            <dd>- SFTP</dd>
+            <dd>- Hardening</dd>
+            <br />
+            <dt><i>2016 - 2017</i> ➡️ <b>Web Portals</b></dt>
+            <dd>- WebForm</dd>
+            <dd>- SharePoint</dd>
+            <dd>- WCF</dd>
+            <dd>- SQL</dd>
+            <br />
+            <dt><i>2015 - 2016</i> ➡️ <b>Models: Regression, Projection</b></dt>
+            <dd>- Excel, VBA</dd>
+            <dd>- WinForm</dd>
+            <br />
+            <dt>
+              <i>2014 - 2015</i> ➡️ <b>IoT, collects mosquito data</b> →
+              <a href="https://imaginecup.microsoft.com/en-us/Team/6cdfbaee-c550-48d0-a555-16ae2948f1db">Mozter</a>, and
+              <a href="https://imaginecup.microsoft.com/en-us/winners/2015WorldFinalists">people liked it</a>.
+            </dt>
+            <dd>- Python</dd>
+            <dd>- Raspberry Pi</dd>
+            <dd>- Azure Storage</dd>
+            <dd>- Fast Fourier Transform</dd>
+            <br />
+            <dt><i>199? - 2014</i> ➡️ <b>Huh? It's a blur</b></dt>
+            <dd>- Learning?</dd>
+            <dd>- Sleeping?</dd>
+          </dl>
+        </div>
+        <div class="grid-item"></div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+export default {
+  name: 'v1Home',
+  props: {
+    msg: String,
+  },
+  data() {
+    return {
+      isHidden: false,
+      // publicPath: process.env.BASE_URL,
+    }
+  },
+  images: {
+    banner: 'banner.jpg',
+  },
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
