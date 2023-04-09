@@ -4,42 +4,63 @@ definePageMeta({
   layout: 'default',
 })
 
-
 const cards = [
   {
     id: 0,
     cardRemark: 'self',
-    cardTitle: "Don't have much to say",
+    cardTitle: `Don't have much to say`,
+    cardDoc: null,
+    cardLink: null,
     cardDefault:
       '<dd>Life is...</dd>' +
       '<dd>as it is.</dd>' +
       '<dd>Probably not the best</dd>' +
       '<dd>but probably, for the best.</dd>',
   },
-
+  {
+    id: 1,
+    cardRemark: 'Web',
+    cardTitle: 'Http Rest</i>',
+    cardDoc: '/http-rest',
+    cardLink:
+      '<a target="_blank" href="https://en.wikipedia.org/wiki/Representational_state_transfer">Wikipedia</>',
+    cardDefault: '<dd>- palceholder</dd>' + '<dd>- palceholder</dd>',
+  },
 ]
 </script>
 
 <template>
-  <div class="hello">
+  <div>
+    <h1 class="page-title text-center font-title text-4xl">van phuong thanh</h1>
     <div>
-      <h1 class="page-title text-center font-title text-4xl">
-        <a target="_blank">van phuong thanh</a>
-      </h1>
       <div class="img-banner">
         <div class="overlay-img">
-          <i>the weird, the strange, the
-            <a href="https://www.instagram.com/t.e.neutrino/" target="_blank">whimsical</a>
+          <i
+            >the weird, the strange, the
+            <a href="https://www.instagram.com/t.e.neutrino/" target="_blank"
+              >whimsical</a
+            >
             like a cup of
-            <a href="https://www.google.com/search?q=cosmic+latte" target="_blank">cosmic latte</a>.</i>
+            <a
+              href="https://www.google.com/search?q=cosmic+latte"
+              target="_blank"
+              >cosmic latte</a
+            >.</i
+          >
           <br />
           <b>person</b>
           <br />singapore<br />
         </div>
       </div>
-      <div v-for="card in cards" :key="card.id"
-        class="container flex flex-wrap flex-col items-center justify-center mx-auto my-2">
-        <TCardH>
+      <div
+        class="container flex flex-wrap flex-col items-center justify-center mx-auto my-2"
+      >
+        <TCardH
+          v-for="(card, index) in cards"
+          :card="card"
+          :index="index"
+          :key="card.id"
+        >
           <template #remark>
             <div v-html="card.cardRemark"></div>
           </template>
@@ -47,16 +68,22 @@ const cards = [
             <div v-html="card.cardTitle"></div>
           </template>
           <template #default>
-            <div v-html="card.cardDefault"></div>
+            <ContentDoc
+              v-if="card.cardDoc"
+              class="nuxt-content"
+              v-bind:head="false"
+              v-bind:path="card.cardDoc"
+            />
+            <div v-else v-html="card.cardDefault"></div>
+          </template>
+          <template v-if="card.cardLink" #link>
+            <div v-html="card.cardLink"></div>
           </template>
         </TCardH>
       </div>
     </div>
   </div>
 </template>
-
-<script>
-</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
@@ -118,8 +145,8 @@ chevron {
 
   .img-banner {
     min-height: 270px;
-    max-height: 600px;
-    max-width: 96%;
+    max-height: 500px;
+    max-width: 1000px;
     height: 35vw;
     text-align: center;
     margin: auto;
@@ -139,7 +166,7 @@ chevron {
     margin: auto;
     padding: 10px;
     border-radius: 0.5em;
-    font-size: 1.4vh;
+    font-size: 1.1rem;
 
     position: absolute;
     bottom: 0.5%;
@@ -172,9 +199,9 @@ chevron {
 
   .img-banner {
     min-height: 270px;
-    max-height: 600px;
-    max-width: 60%;
-    height: 35vw;
+    max-height: 500px;
+    max-width: 1000px;
+    height: 30vw;
     text-align: center;
     margin: auto;
     background-image: url('../assets/banner.jpg');
@@ -192,7 +219,7 @@ chevron {
     margin: auto;
     padding: 10px;
     border-radius: 0.5em;
-    font-size: 1.4vh;
+    font-size: 1.1rem;
 
     position: absolute;
     bottom: 0.5%;
@@ -200,14 +227,6 @@ chevron {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-center {
-  text-align: center;
 }
 
 .text-header-1 {

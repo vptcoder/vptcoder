@@ -6,9 +6,6 @@
       <NuxtLink to="/" class="font-title text-xl">
         <TButton>I</TButton>
       </NuxtLink>
-      <NuxtLink to="/junior" class="font-serif">
-        <TButton>Become better: Junior Backend Programmer</TButton>
-      </NuxtLink>
       <NuxtLink class="font-serif hidden" to="/code">
         <TButton>Code</TButton>
       </NuxtLink>
