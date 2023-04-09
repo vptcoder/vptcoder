@@ -17,12 +17,17 @@ const cards = [
     cardRemark: 'Web',
     cardTitle: 'Http Rest</i>',
     cardDoc: '/http-rest',
+    cardLink:
+      '<a target="_blank" href="https://en.wikipedia.org/wiki/Representational_state_transfer">Wikipedia</>',
     cardDefault: '<dd>- palceholder</dd>' + '<dd>- palceholder</dd>',
   },
   {
     id: 2,
     cardRemark: 'API',
     cardTitle: 'Http Soap (used by Microsoft WCF)</i>',
+    cardDoc: '/protocol-soap',
+    cardLink:
+      '<a target="_blank" href="https://en.wikipedia.org/wiki/SOAP">Wikipedia</>',
     cardDefault: '<dd>- palceholder</dd>' + '<dd>- palceholder</dd>',
   },
   {
@@ -49,7 +54,7 @@ const cards = [
       <div
         class="container flex flex-wrap flex-col items-center justify-center mx-auto my-2"
       >
-        <div class="max-w-2xl w-full my-3">
+        <div class="max-w-4xl w-full my-3">
           <div
             class="border border-gray-400 bg-white rounded-lg p-4 flex flex-col justify-between leading-normal"
           >

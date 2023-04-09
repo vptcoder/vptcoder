@@ -35,7 +35,7 @@
   }
   
   .nuxt-content ul, ol {
-    margin-left: 1em;
+    margin-left: 1.4rem;
   }
   .nuxt-content ul {
     list-style: disc
@@ -44,6 +44,6 @@
     list-style: decimal;
   }
   .nuxt-content blockquote {
-    margin-left: 1em;
+    margin-left: 1rem;
   }
   
