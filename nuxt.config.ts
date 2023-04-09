@@ -2,18 +2,16 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'vptcoder'
+      title: 'vptcoder',
     },
-    pageTransition:{
+    pageTransition: {
       name: 'page',
-      mode: 'out-in'
-    }
+      mode: 'out-in',
+    },
   },
   modules: ['@nuxtjs/tailwindcss', '@nuxt/content'],
   tailwindcss: {
     exposeConfig: true,
   },
-  css: [
-    '@/assets/css/nuxt-content.css'
-  ],
+  css: ['@/assets/css/nuxt-content.css'],
 })
