@@ -2,7 +2,9 @@
 <script setup>
 // const { data } = await useFetch(() => `/api/hello`)
 // import cSharp from '../markdowns/c-sharp.md'
-
+useHead({
+  title: 'Junior Backend',
+})
 const cards = [
   {
     id: 0,
@@ -63,11 +65,14 @@ const cards = [
         </div>
       </div>
       <div
-        v-for="card in cards"
-        :key="card.id"
         class="container flex flex-wrap flex-col items-center justify-center mx-auto my-2"
       >
-        <TCardH>
+        <TCardH
+          v-for="(card, index) in cards"
+          :card="card"
+          :index="index"
+          :key="card.id"
+        >
           <template #remark>
             <div v-html="card.cardRemark"></div>
           </template>
@@ -75,9 +80,12 @@ const cards = [
             <div v-html="card.cardTitle"></div>
           </template>
           <template #default>
-            <div v-if="card.cardDoc" class="nuxt-content">
-              <ContentDoc v-bind:path="card.cardDoc" />
-            </div>
+            <ContentDoc
+              v-if="card.cardDoc"
+              class="nuxt-content"
+              v-bind:head="false"
+              v-bind:path="card.cardDoc"
+            />
             <div v-else v-html="card.cardDefault"></div>
           </template>
           <template v-if="card.cardLink" #link>

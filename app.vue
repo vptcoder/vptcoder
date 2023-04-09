@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="bg-newspaper-light">
+  <div>
     <NuxtLoadingIndicator />
     <!-- <NuxtPage /> -->
     <NuxtLayout> <NuxtPage /> </NuxtLayout>

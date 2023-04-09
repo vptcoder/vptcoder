@@ -1,7 +1,3 @@
----
-title: HTTP REST
----
-
 # Essential for web development
 
 ### What is HTTP

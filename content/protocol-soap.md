@@ -1,7 +1,3 @@
----
-title: SOAP
----
-
 # Essential for web development
 
 ### What is SOAP
