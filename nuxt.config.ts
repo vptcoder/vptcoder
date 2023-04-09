@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'vptcoder',
+      title: '@vptcoder',
     },
     pageTransition: {
       name: 'page',
