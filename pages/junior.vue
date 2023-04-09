@@ -6,7 +6,7 @@
 const cards = [
   {
     id: 0,
-    cardRemark: 'Level 1',
+    cardRemark: 'Language, Essential',
     cardTitle: 'C#',
     cardLink:
       '<a target="_blank" href="https://www.w3schools.com/cs/index.php">w3schools</a>',
@@ -14,25 +14,26 @@ const cards = [
   },
   {
     id: 1,
-    cardRemark: 'Level 1',
+    cardRemark: 'Web',
     cardTitle: 'Http Rest</i>',
+    cardDoc: '/http-rest',
     cardDefault: '<dd>- palceholder</dd>' + '<dd>- palceholder</dd>',
   },
   {
     id: 2,
-    cardRemark: 'Level 1',
+    cardRemark: 'API',
     cardTitle: 'Http Soap (used by Microsoft WCF)</i>',
     cardDefault: '<dd>- palceholder</dd>' + '<dd>- palceholder</dd>',
   },
   {
     id: 3,
-    cardRemark: 'Level 1',
+    cardRemark: 'Web',
     cardTitle: 'Client-Server communication</i>',
     cardDefault: '<dd>- palceholder</dd>' + '<dd>- palceholder</dd>',
   },
   {
     id: 4,
-    cardRemark: 'Level 1',
+    cardRemark: 'Test',
     cardTitle: 'Unit Testing</i>',
     cardDefault: '<dd>- palceholder</dd>' + '<dd>- palceholder</dd>',
   },

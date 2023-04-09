@@ -4,4 +4,7 @@ export default defineNuxtConfig({
   tailwindcss: {
     exposeConfig: true,
   },
+  css: [
+    '@/assets/css/nuxt-content.css'
+  ],
 })
