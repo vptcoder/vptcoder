@@ -7,24 +7,14 @@ definePageMeta({
 const cards = [
   {
     id: 0,
-    cardRemark: 'self',
-    cardTitle: `Don't have much to say`,
+    cardRemark: `custom web apps`,
+    cardTitle: `Senior Analyst @ Accenture Singapore`,
     cardDoc: null,
-    cardLink: null,
+    cardLink: `<a target="_blank" href="https://www.linkedin.com/in/vptcoder/">LinkedIn</a>`,
     cardDefault:
-      '<dd>Life is...</dd>' +
-      '<dd>as it is.</dd>' +
-      '<dd>Probably not the best</dd>' +
-      '<dd>but probably, for the best.</dd>',
-  },
-  {
-    id: 1,
-    cardRemark: 'Web',
-    cardTitle: 'Http Rest</i>',
-    cardDoc: '/http-rest',
-    cardLink:
-      '<a target="_blank" href="https://en.wikipedia.org/wiki/Representational_state_transfer">Wikipedia</>',
-    cardDefault: '<dd>- palceholder</dd>' + '<dd>- palceholder</dd>',
+      `Just your average dev trying to make a living in a corporate role.<br>` +
+      `I do cloud architecting on Azure these days,<br>` +
+      `and trying to keep my hands busy with Nuxt on my days off.`,
   },
 ]
 </script>
@@ -35,21 +25,9 @@ const cards = [
     <div>
       <div class="img-banner">
         <div class="overlay-img">
-          <i
-            >the weird, the strange, the
-            <a href="https://www.instagram.com/t.e.neutrino/" target="_blank"
-              >whimsical</a
-            >
-            like a cup of
-            <a
-              href="https://www.google.com/search?q=cosmic+latte"
-              target="_blank"
-              >cosmic latte</a
-            >.</i
-          >
-          <br />
-          <b>person</b>
-          <br />singapore<br />
+          <a target="_blank" href="https://goo.gl/maps/R4XviPS1bSoZC9gu5"
+            >&#128205; Bukchon Hanok 북촌한옥마을, Seoul, Korea</a
+          ><br /><i> I like this photo</i>
         </div>
       </div>
       <div
