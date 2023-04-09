@@ -16,7 +16,7 @@ jobs:
           submodules: true
 
       - name: Install dependencies 👨🏻‍💻
-        run: npm ci --prefer-offline --no-audit
+        run: npm i --prefer-offline --no-audit
 
       - name: Run linter 👀
         run: npm run lint
