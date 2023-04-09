@@ -11,6 +11,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        newspaper: {
+          white: '#fefdf8',
+          light: '#fbf5e2',
+          dark: '#f5e6b5',
+        },
+      },
       fontFamily: {
         sans: ['Archivo', ...defaultTheme.fontFamily.sans],
         serif: ['Mariposa Sans', ...defaultTheme.fontFamily.serif],
