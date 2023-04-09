@@ -57,8 +57,8 @@ const cards = [
       >
         <TCardH
           v-for="(card, index) in cards"
-          :card="card"
           :key="card.id"
+          :card="card"
           :index="index"
         >
           <!-- eslint-disable vue/no-v-html -->
