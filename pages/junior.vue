@@ -2,7 +2,9 @@
 <script setup>
 // const { data } = await useFetch(() => `/api/hello`)
 // import cSharp from '../markdowns/c-sharp.md'
-
+useHead({
+  title: 'Junior Backend',
+})
 const cards = [
   {
     id: 0,
@@ -76,7 +78,7 @@ const cards = [
           </template>
           <template #default>
             <div v-if="card.cardDoc" class="nuxt-content">
-              <ContentDoc v-bind:path="card.cardDoc" />
+              <ContentDoc v-bind:head="false" v-bind:path="card.cardDoc" />
             </div>
             <div v-else v-html="card.cardDefault"></div>
           </template>
