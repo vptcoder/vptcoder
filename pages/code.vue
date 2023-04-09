@@ -64,22 +64,36 @@ const cards = [
   <div class="hello">
     <div>
       <h1 class="page-title text-center font-title text-4xl">
-        <a href="https://www.linkedin.com/in/vptcoder/" target="_blank"><u>vptcoder</u></a>
+        <a href="https://www.linkedin.com/in/vptcoder/" target="_blank"
+          ><u>vptcoder</u></a
+        >
       </h1>
       <div class="img-banner">
         <div class="overlay-img">
-          <i>the weird, the strange, the
-            <a href="https://www.instagram.com/t.e.neutrino/" target="_blank">whimsical</a>
+          <i
+            >the weird, the strange, the
+            <a href="https://www.instagram.com/t.e.neutrino/" target="_blank"
+              >whimsical</a
+            >
             like a cup of
-            <a href="https://www.google.com/search?q=cosmic+latte" target="_blank">cosmic latte</a>.</i>
+            <a
+              href="https://www.google.com/search?q=cosmic+latte"
+              target="_blank"
+              >cosmic latte</a
+            >.</i
+          >
           <br />
           <b>person</b>
           <br />singapore<br />
         </div>
       </div>
-      <div v-for="card in cards" :key="card.id"
-        class="container flex flex-wrap flex-col items-center justify-center mx-auto my-2">
+      <div
+        v-for="card in cards"
+        :key="card.id"
+        class="container flex flex-wrap flex-col items-center justify-center mx-auto my-2"
+      >
         <TCardH>
+          <!-- eslint-disable vue/no-v-html -->
           <template #remark>
             <div v-html="card.cardRemark"></div>
           </template>
@@ -89,12 +103,15 @@ const cards = [
           <template #default>
             <div v-html="card.cardDefault"></div>
           </template>
+          <!-- eslint-enable -->
         </TCardH>
       </div>
       <div class="container-grid">
         <!-- Set 3 -->
         <div class="grid-item-header"></div>
-        <div class="grid-item-header text-left text-header-1 colored-cosmic-latte">
+        <div
+          class="grid-item-header text-left text-header-1 colored-cosmic-latte"
+        >
           To do
         </div>
         <div class="grid-item-header"></div>
@@ -113,7 +130,9 @@ const cards = [
 
         <!-- Set 1 -->
         <div class="grid-item-header"></div>
-        <div class="grid-item-header text-left text-header-1 colored-cosmic-latte">
+        <div
+          class="grid-item-header text-left text-header-1 colored-cosmic-latte"
+        >
           Doing
         </div>
         <div class="grid-item-header"></div>
@@ -131,7 +150,9 @@ const cards = [
 
         <!-- Set 2 -->
         <div class="grid-item-header text-left"></div>
-        <div class="grid-item-header text-left text-header-1 colored-cosmic-latte">
+        <div
+          class="grid-item-header text-left text-header-1 colored-cosmic-latte"
+        >
           Done
         </div>
         <div class="grid-item-header"></div>
@@ -167,8 +188,14 @@ const cards = [
             <br />
             <dt>
               <i>2014 - 2015</i> ➡️ <b>IoT, collects mosquito data</b> →
-              <a href="https://imaginecup.microsoft.com/en-us/Team/6cdfbaee-c550-48d0-a555-16ae2948f1db">Mozter</a>, and
-              <a href="https://imaginecup.microsoft.com/en-us/winners/2015WorldFinalists">people liked it</a>.
+              <a
+                href="https://imaginecup.microsoft.com/en-us/Team/6cdfbaee-c550-48d0-a555-16ae2948f1db"
+                >Mozter</a
+              >, and
+              <a
+                href="https://imaginecup.microsoft.com/en-us/winners/2015WorldFinalists"
+                >people liked it</a
+              >.
             </dt>
             <dd>- Python</dd>
             <dd>- Raspberry Pi</dd>
@@ -191,10 +218,6 @@ definePageMeta({
   layout: 'default',
 })
 export default {
-  name: 'v1Home',
-  props: {
-    msg: String,
-  },
   data() {
     return {
       isHidden: false,

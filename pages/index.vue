@@ -58,9 +58,10 @@ const cards = [
         <TCardH
           v-for="(card, index) in cards"
           :card="card"
-          :index="index"
           :key="card.id"
+          :index="index"
         >
+          <!-- eslint-disable vue/no-v-html -->
           <template #remark>
             <div v-html="card.cardRemark"></div>
           </template>
@@ -71,14 +72,15 @@ const cards = [
             <ContentDoc
               v-if="card.cardDoc"
               class="nuxt-content"
-              v-bind:head="false"
-              v-bind:path="card.cardDoc"
+              :head="false"
+              :path="card.cardDoc"
             />
             <div v-else v-html="card.cardDefault"></div>
           </template>
           <template v-if="card.cardLink" #link>
             <div v-html="card.cardLink"></div>
           </template>
+          <!-- eslint-enable -->
         </TCardH>
       </div>
     </div>
