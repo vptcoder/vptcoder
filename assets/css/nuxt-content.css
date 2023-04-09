@@ -1,0 +1,49 @@
+
+.nuxt-content h1,h2,h3,h4,h5 {
+    margin-top: 1.8rem;
+  }
+  .nuxt-content h1 {
+    font-style: italic;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+    line-height: 2rem;
+  }
+  .nuxt-content h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+    line-height: 1.5rem;
+  }
+  .nuxt-content h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    line-height: 1.2rem;
+  }
+  .nuxt-content h4 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 0.2rem;
+    line-height: 1.2rem;
+  }
+  .nuxt-content h5 {
+    font-size: 1rem;
+    font-weight: 900;
+    margin-bottom: 0.1rem;
+    line-height: 1.2rem;
+  }
+  
+  .nuxt-content ul, ol {
+    margin-left: 1.4rem;
+  }
+  .nuxt-content ul {
+    list-style: disc
+  }
+  .nuxt-content ol {
+    list-style: decimal;
+  }
+  .nuxt-content blockquote {
+    margin-left: 1rem;
+  }
+  
