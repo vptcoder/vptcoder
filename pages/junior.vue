@@ -50,7 +50,7 @@ const cards = [
 <template>
   <div class="hello">
     <div>
-      <h1 class="page-title text-center font-serif text-4xl">
+      <h1 class="page-title text-center font-serif text-3xl">
         Learning for Backend
       </h1>
       <div

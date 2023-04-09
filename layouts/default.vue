@@ -14,7 +14,7 @@
           >
         </NuxtLink>
       </div>
-      <div class="bg-newspaper-light mx-4 justify-center content-center w-full">
+      <div class="bg-newspaper-light px-4 justify-center content-center w-full">
         <slot></slot>
       </div>
     </div>
