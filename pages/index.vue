@@ -7,21 +7,29 @@ definePageMeta({
 const cards = [
   {
     id: 0,
-    cardRemark: `custom web apps`,
-    cardTitle: `Senior Analyst @ Accenture Singapore`,
+    cardRemark: `Senior Analyst @ Accenture, Singapore`,
+    cardTitle: `Van Phuong Thanh`,
     cardDoc: null,
     cardLink: `<a target="_blank" href="https://www.linkedin.com/in/vptcoder/">LinkedIn</a>`,
     cardDefault:
-      `Just your average dev trying to make a living in a corporate role.<br>` +
-      `I do cloud architecting on Azure these days,<br>` +
+      `I create custom web apps.<br>` +
+      `and do cloud architecting on Azure these days,<br>` +
       `and trying to keep my hands busy with Nuxt on my days off.`,
+  },
+  {
+    id: 0,
+    cardRemark: ``,
+    cardTitle: `t.e.neutrino`,
+    cardDoc: null,
+    cardLink: `<a target="_blank" href="https://www.instagram.com/t.e.neutrino/">Instagram</a>`,
+    cardDefault: `I also take photos for fun.<br>`,
   },
 ]
 </script>
 
 <template>
   <div>
-    <h1 class="page-title text-center font-title text-4xl">van phuong thanh</h1>
+    <h1 class="page-title text-center font-title text-4xl">văn</h1>
     <div>
       <div class="img-banner">
         <div class="overlay-img">
