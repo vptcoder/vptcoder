@@ -1,10 +1,8 @@
 <template>
-  <header class="px-2 sm:px-4 py-2.5 rounded">
-    <div
-      class="container flex flex-wrap items-center justify-center mx-auto border-b-2"
-    >
+  <header class="px-2">
+    <div class="flex flex-wrap items-center border-b-2">
       <NuxtLink to="/" class="font-title text-xl">
-        <TButton>I</TButton>
+        <TButton class="underline underline-offset-4">vptcoder</TButton>
       </NuxtLink>
       <NuxtLink class="font-serif hidden" to="/code">
         <TButton>Code</TButton>

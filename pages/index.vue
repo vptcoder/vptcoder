@@ -18,7 +18,7 @@ const cards = [
   },
   {
     id: 0,
-    cardRemark: ``,
+    cardRemark: `trying to see the smaller things`,
     cardTitle: `t.e.neutrino`,
     cardDoc: null,
     cardLink: `<a target="_blank" href="https://www.instagram.com/t.e.neutrino/">Instagram</a>`,
@@ -79,58 +79,7 @@ dd {
   list-style-type: circle;
 }
 
-chevron {
-  position: relative;
-  display: block;
-  height: 50px;
-  /*height should be double border*/
-}
-
-.chevron::before,
-.chevron::after {
-  position: absolute;
-  display: block;
-  content: '';
-  border: 25px solid transparent;
-  /*adjust size*/
-}
-
-/* Replace all text `top` below with left/right/bottom to rotate the chevron */
-
-.chevron::before {
-  top: 0;
-  border-top-color: #b00;
-  /*Chevron Color*/
-}
-
-.chevron::after {
-  top: -10px;
-  /*adjust thickness*/
-  border-top-color: #fff;
-  /*Match background colour*/
-}
-
 @media only screen and (max-width: 400px) {
-  .container-grid {
-    display: grid;
-    grid-template-columns: 0.5fr 9fr 0.5fr;
-    grid-auto-rows: auto;
-    column-gap: 5px;
-    row-gap: 0px;
-    padding: 2px;
-  }
-
-  .grid-item {
-    padding: 10px;
-    min-height: 5em;
-  }
-
-  .grid-item-header {
-    padding: 10px;
-    min-height: 0em;
-    height: 1em;
-  }
-
   .img-banner {
     min-height: 270px;
     max-height: 500px;
@@ -165,26 +114,6 @@ chevron {
 }
 
 @media only screen and (min-width: 401px) {
-  .container-grid {
-    display: grid;
-    grid-template-columns: 2fr 6fr 2fr;
-    grid-auto-rows: auto;
-    column-gap: 20px;
-    row-gap: 0px;
-    padding: 10px;
-  }
-
-  .grid-item {
-    padding: 20px;
-    min-height: 5em;
-  }
-
-  .grid-item-header {
-    padding: 20px;
-    min-height: 0em;
-    height: 1em;
-  }
-
   .img-banner {
     min-height: 270px;
     max-height: 500px;
@@ -217,38 +146,10 @@ chevron {
   }
 }
 
-.text-header-1 {
-  font-weight: bolder;
-  font-size: x-large;
-  font-family: 'Rockwell';
-}
-
-.colored-cosmic-latte {
-  background-color: #fff8e7;
-}
-
-.viewpart {
-  margin-top: 30px;
-}
-
-h3 {
-  margin: 40px 0 0;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-nav a:hover,
+/* nav a:hover,
 nav a.router-link-active,
 nav a.router-link-exact-active {
   cursor: pointer;
   background-color: #fff8e7;
-}
+} */
 </style>
