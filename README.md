@@ -1,7 +1,7 @@
 # Things I learnt along the way
 
-## [I. Common](/Learning/I.-Common)
+## [I. Common](/I.-Common)
 
-## [II. Developer](/Learning/II.-Developer)
+## [II. Developer](/II.-Developer)
 
-## [III. Architect](/Learning/III.-Senior-Developer)
+## [III. Architect](/III.-Senior-Developer)
