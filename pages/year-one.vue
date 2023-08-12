@@ -8,20 +8,22 @@ useHead({
 const cards = [
   {
     id: 0,
-    cardRemark: 'Language, Essential',
-    cardTitle: 'C#',
-    cardLink:
-      '<a target="_blank" href="https://www.w3schools.com/cs/index.php">w3schools</a>',
-    cardDoc: '/c-sharp',
+    cardRemark: 'note',
+    cardTitle: 'Introduction',
+    cardDefault: `<p>This is a course. It's approach is somewhat different from the typical programming course that can be found online.</p>
+    <p>I will guide you through the steps it take to get familiarised with programming as a professional practice,\
+      while trying to instill into you the sense of curiousity and excitement necessary to maintain this practice \
+      as a proper career path.</p>
+    <p>I will use an entirely TypeScript stack in this course because (1) it is most accessible, (2) resources \
+      that use JavaScript/TypeScript are mostly open-source.</p>`,
   },
   {
     id: 1,
-    cardRemark: 'Web',
-    cardTitle: 'Http Rest</i>',
-    cardDoc: '/http-rest',
+    cardRemark: 'Lesson',
+    cardTitle: 'Functions/Methods',
+    cardDoc: '/year-one-functions',
     cardLink:
       '<a target="_blank" href="https://en.wikipedia.org/wiki/Representational_state_transfer">Wikipedia</>',
-    cardDefault: '<dd>- palceholder</dd>' + '<dd>- palceholder</dd>',
   },
   {
     id: 2,
@@ -60,7 +62,7 @@ const cards = [
           <div
             class="border border-gray-400 bg-white rounded-lg p-4 flex flex-col justify-between leading-normal"
           >
-            <p><b>Level 1 - </b><i>Aim for 50% of this level</i></p>
+            <p><b>Year One - </b><i>The fundamentals of programming</i></p>
           </div>
         </div>
       </div>

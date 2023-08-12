@@ -9,5 +9,12 @@
         >Become better: Junior Backend Programmer</TButton
       >
     </NuxtLink>
+    <NuxtLink to="/year-one" class="font-serif">
+      <TButton
+        class="text-left"
+        :class="{ 'bg-newspaper-white': $route.path == '/junior' }"
+        >Get better: Year One</TButton
+      >
+    </NuxtLink>
   </div>
 </template>
